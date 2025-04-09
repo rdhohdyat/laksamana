@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="bg-white bg-gradient-to-br from-blue-100 via-200 to-white text-gray-800 pt-12 lg:pt-24 lg:pb-24 overflow-x-hidden"
+      className="bg-white bg-gradient-to-br from-blue-100 via-200 to-white text-gray-800 py-12 lg:py-24 overflow-x-hidden"
     >
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-16">
