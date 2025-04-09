@@ -3,7 +3,7 @@ import aboutImage from "../assets/about.svg";
 
 const About = () => {
   return (
-    <section id="about" className="xl:py-20  py-10">
+    <section id="about" className="xl:py-20  py-10 overflow-x-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center">
           <motion.div
