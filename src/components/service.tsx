@@ -1,52 +1,60 @@
-import {
-  Code,
-  Layout,
-  Zap,
-} from "lucide-react";
+import { Megaphone, ShoppingCart, Zap } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Service = () => {
   const services = [
     {
-      icon: <Layout size={32} />,
-      title: "Web Development",
+      icon: <Megaphone size={32} />,
+      title: "Promosi Produk",
       description:
-        "Kami membangun website profesional yang responsif dan user-friendly untuk mengoptimalkan kehadiran online bisnis Anda.",
+        "Kami membantu mempromosikan produk Anda melalui strategi konten, sosial media, dan channel afiliasi yang telah terbukti meningkatkan penjualan.",
     },
     {
-      icon: <Code size={32} />,
-      title: "Mobile Apps",
+      icon: <ShoppingCart size={32} />,
+      title: "Listing Produk",
       description:
-        "Kembangkan aplikasi mobile yang inovatif untuk Android dan iOS yang meningkatkan engagement dengan pelanggan Anda.",
+        "Produk Anda akan kami tampilkan di marketplace untuk menjangkau lebih banyak calon pembeli.",
     },
     {
       icon: <Zap size={32} />,
-      title: "Digital Marketing",
+      title: "Iklan Digital",
       description:
-        "Strategi pemasaran digital yang komprehensif untuk meningkatkan brand awareness dan mendorong pertumbuhan bisnis Anda.",
+        "Kami mengelola kampanye iklan untuk menjangkau audiens yang tepat.",
     },
   ];
 
   return (
     <section id="services" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        {/* Judul */}
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-3xl font-bold mb-4">Layanan Kami</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Kami menyediakan berbagai layanan digital untuk membantu bisnis Anda
-            berkembang di era digital dengan strategi yang terukur dan efektif.
+            Kami menyediakan layanan promosi digital untuk membantu produk Anda dikenal luas, menarik pelanggan potensial, dan meningkatkan penjualan melalui strategi afiliasi yang efektif.
           </p>
-        </div>
+        </motion.div>
 
+        {/* Kartu Layanan */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
+            <motion.div
               key={index}
               className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
             >
               <div className="text-blue-600 mb-4">{service.icon}</div>
               <h3 className="text-xl font-bold mb-3">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

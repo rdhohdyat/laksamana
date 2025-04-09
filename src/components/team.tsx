@@ -7,65 +7,48 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
 const Team = () => {
   const teamMembers = [
     {
       name: "Fufufafa",
-      position: "CEO & Founder",
-      socials: ["instagram", "twitter", "linkedin"],
+      position: "Affiliate Aktif",
     },
     {
       name: "Fufufafa",
-      position: "CEO & Founder",
-      socials: ["instagram", "twitter", "linkedin"],
+      position: "Affiliate Aktif",
     },
     {
       name: "Fufufafa",
-      position: "CEO & Founder",
-      socials: ["instagram", "twitter", "linkedin"],
+      position: "Affiliate Aktif",
     },
     {
       name: "Fufufafa",
-      position: "CEO & Founder",
-      socials: ["instagram", "twitter", "linkedin"],
+      position: "Affiliate Aktif",
     },
     {
       name: "Fufufafa",
-      position: "CEO & Founder",
-      socials: ["instagram", "twitter", "linkedin"],
+      position: "Affiliate Aktif",
     },
     {
       name: "Fufufafa",
-      position: "CEO & Founder",
-      socials: ["instagram", "twitter", "linkedin"],
+      position: "Affiliate Aktif",
+    },
+    {
+      name: "Fufufafa",
+      position: "Affiliate Aktif",
     },
   ];
-
-  const renderSocialIcon = (social: string) => {
-    switch (social) {
-      case "instagram":
-        return <Instagram size={18} />;
-      case "twitter":
-        return <Twitter size={18} />;
-      case "facebook":
-        return <Facebook size={18} />;
-      case "linkedin":
-        return <Linkedin size={18} />;
-      default:
-        return null;
-    }
-  };
 
   return (
     <section id="team" className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Tim Profesional Kami</h2>
+          <h2 className="text-3xl font-bold mb-4">Tim Kami</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Kami adalah tim yang terdiri dari individu berbakat dan
-            berpengalaman yang berdedikasi untuk memberikan hasil terbaik bagi
-            klien kami.
+            Inilah beberapa orang hebat yang telah bergabung bersama kami untuk
+            mempromosikan berbagai produk melalui sistem afiliasi.
           </p>
         </div>
 
@@ -76,30 +59,26 @@ const Team = () => {
                 key={index}
                 className="pl-4 md:basis-1/2 lg:basis-1/4 mb-5"
               >
-                <Card className="rounded-xl overflow-hidden shadow-lg">
-                  <CardContent className="p-0">
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjxTOc1Z5yT4gzy6apVD7dFJXL-nHVcYA3xg&s"
-                      alt={member.name}
-                      className="w-full h-64 object-cover"
-                    />
-                    <div className="p-4">
-                      <h3 className="text-xl font-bold">{member.name}</h3>
-                      <p className="text-blue-600">{member.position}</p>
-                      <div className="flex space-x-3 mt-4">
-                        {member.socials.map((social, idx) => (
-                          <a
-                            key={idx}
-                            href="#"
-                            className="text-gray-400 hover:text-blue-600 transition duration-300"
-                          >
-                            {renderSocialIcon(social)}
-                          </a>
-                        ))}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <Card className="rounded-xl overflow-hidden shadow p-0 hover:shadow-xl transition-all ease-in-out">
+                    <CardContent className="p-0">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjxTOc1Z5yT4gzy6apVD7dFJXL-nHVcYA3xg&s"
+                        alt={member.name}
+                        className="w-full h-64 object-cover"
+                      />
+                      <div className="p-4 text-center">
+                        <h3 className="text-xl font-bold">{member.name}</h3>
+                        <p className="text-sm text-gray-500">{member.position}</p>
                       </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               </CarouselItem>
             ))}
           </CarouselContent>

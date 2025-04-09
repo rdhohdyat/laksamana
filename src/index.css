@@ -118,3 +118,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}

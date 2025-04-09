@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Digital Agency</h3>
+            <h3 className="text-xl font-bold mb-4">Laksmana Digital Agency</h3>
             <p className="text-gray-400 mb-4">
               Solusi digital terbaik untuk bisnis Anda. Kami membantu bisnis
               Anda tumbuh melalui strategi digital yang tepat sasaran.
@@ -55,7 +55,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Web Development
+                  Promosi Produk
                 </a>
               </li>
               <li>
@@ -63,7 +63,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Mobile Apps
+                  Listing Produk
                 </a>
               </li>
               <li>
@@ -71,29 +71,29 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Digital Marketing
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  UI/UX Design
+                  Iklan Digital
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-bold mb-4">Perusahaan</h4>
+            <h4 className="font-bold mb-4">Navigasi</h4>
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#about-us"
+                  href="#about"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Tentang Kami
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Layanan
                 </a>
               </li>
               <li>
@@ -106,10 +106,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#testimoni"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Karir
+                  Testimoni
                 </a>
               </li>
               <li>
@@ -128,7 +128,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Mail size={16} className="mr-2 text-gray-400" />
-                <span className="text-gray-400">info@digitalagency.com</span>
+                <span className="text-gray-400">info@laksamana.digital.com</span>
               </li>
               <li className="flex items-center">
                 <Phone size={16} className="mr-2 text-gray-400" />
@@ -137,7 +137,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin size={16} className="mr-2 mt-1 text-gray-400" />
                 <span className="text-gray-400">
-                  Jl. Digital No. 123, Jakarta Selatan, 12345
+                  Jl. Jauhari Mais, Rimba Melintang, 12345
                 </span>
               </li>
             </ul>
@@ -145,7 +145,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-500">
-          <p>&copy; 2025 Digital Agency. All rights reserved.</p>
+          <p>&copy; 2025 Laksamana Digital Agency. All rights reserved.</p>
         </div>
       </div>
     </footer>

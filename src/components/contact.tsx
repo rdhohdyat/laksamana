@@ -10,7 +10,7 @@ import {
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 bg-white bg-gradient-to-br from-blue-100 via-200 to-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mb-10 md:mb-0">
@@ -25,7 +25,7 @@ const Contact = () => {
                 <Mail className="text-blue-600 mr-4 mt-1" size={20} />
                 <div>
                   <h3 className="font-bold">Email</h3>
-                  <p className="text-gray-700">info@digitalagency.com</p>
+                  <p className="text-gray-700">info@laksamana.digital.com</p>
                 </div>
               </div>
 
@@ -42,7 +42,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold">Alamat</h3>
                   <p className="text-gray-700">
-                    Jl. Digital No. 123, Jakarta Selatan, 12345
+                    Jl. Jauhari Mais, Rimba Melintang, 12345
                   </p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ const Contact = () => {
           </div>
 
           <div className="md:w-1/2">
-            <form className="bg-white p-8 rounded-xl shadow-lg">
+            <form className="bg-white p-8 rounded-xl shadow-lg border border-gray-300">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label className="block text-gray-700 mb-2" htmlFor="name">
@@ -86,6 +86,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="name"
+                    autoComplete="false"
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                     placeholder="Nama Anda"
                   />
@@ -97,6 +98,7 @@ const Contact = () => {
                   <input
                     type="email"
                     id="email"
+                    autoComplete="false"
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                     placeholder="email@anda.com"
                   />
@@ -110,6 +112,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="subject"
+                  autoComplete="false"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                   placeholder="Subjek pesan"
                 />
@@ -122,6 +125,7 @@ const Contact = () => {
                 <textarea
                   id="message"
                   rows={5}
+                  autoComplete="false"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                   placeholder="Tuliskan pesan Anda di sini..."
                 ></textarea>
