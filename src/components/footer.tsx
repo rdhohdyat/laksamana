@@ -1,9 +1,4 @@
 import {
-  ArrowRight,
-  Code,
-  Layout,
-  Zap,
-  Users,
   Mail,
   Phone,
   MapPin,
