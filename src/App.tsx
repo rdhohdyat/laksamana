@@ -7,6 +7,8 @@ import Team from "./components/team";
 import Testimoni from "./components/testimoni";
 import Contact from "./components/contact";
 
+import waIcon from "./assets/whatsapp.png";
+
 function App() {
   return (
     <>
@@ -19,11 +21,14 @@ function App() {
       <Contact />
       <Footer />
 
-      <div>
-        <a href="">
-          <img src="" alt="" />
-        </a>
-      </div>
+      <a
+        href="https://wa.me/6282287498239?text=Hai%20saya%20tertarik%20dengan%20layanan%20Anda"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 w-16 h-16 flex items-center justify-center rounded-full  transition"
+      >
+        <img src={waIcon} alt="WhatsApp" className="w-16 h-16" />
+      </a>
     </>
   );
 }
