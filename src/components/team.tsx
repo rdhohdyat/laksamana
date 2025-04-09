@@ -1,4 +1,3 @@
-import { Instagram, Twitter, Facebook, Linkedin } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
