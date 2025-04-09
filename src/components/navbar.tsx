@@ -51,7 +51,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100" aria-label="Main Navigation">
+    <nav className="sticky left-0 right-0 top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100" aria-label="Main Navigation">
       <div className="flex justify-between items-center py-4 px-4 sm:px-8 md:px-16 lg:px-24">
 
         <a href="#home">
