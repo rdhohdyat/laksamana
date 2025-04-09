@@ -69,7 +69,7 @@ const Team = () => {
                       <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjxTOc1Z5yT4gzy6apVD7dFJXL-nHVcYA3xg&s"
                         alt={member.name}
-                        className="w-full h-64 object-cover"
+                        className="w-full h-36 lg:h-64 object-cover"
                       />
                       <div className="p-4 text-center">
                         <h3 className="text-xl font-bold">{member.name}</h3>
@@ -82,8 +82,8 @@ const Team = () => {
             ))}
           </CarouselContent>
           <div className="flex justify-center mt-6 ">
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="ml-16" />
+            <CarouselNext  className="mr-16"/>
           </div>
         </Carousel>
       </div>
