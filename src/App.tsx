@@ -22,7 +22,7 @@ function App() {
       <Footer />
 
       <a
-        href="https://wa.me/6282287498239?text=Hai%20saya%20tertarik%20dengan%20layanan%20Anda"
+        href="https://wa.me/6285363262626?text=Hai%20saya%20tertarik%20dengan%20layanan%20Anda"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed z-50 bottom-6 right-6 w-16 h-16 flex items-center justify-center rounded-full  transition"
