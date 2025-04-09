@@ -84,7 +84,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <a
             href="#contact"
             className="border border-blue-600 text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition"
@@ -96,7 +96,7 @@ const Navbar = () => {
         {/* Mobile menu */}
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="outline" className="md:hidden">
+            <Button variant="outline" className="lg:hidden">
               <Menu />
             </Button>
           </SheetTrigger>

@@ -5,12 +5,12 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="bg-white bg-gradient-to-br from-blue-100 via-200 to-white text-gray-800 pt-24 pb-24 overflow-hidden"
+      className="bg-white bg-gradient-to-br from-blue-100 via-200 to-white text-gray-800 pt-12 lg:pt-24 lg:pb-24 overflow-hidden"
     >
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-16">
           <motion.div
-            className="md:w-1/2 order-2 xl:order-none"
+            className="lg:w-1/2 order-2 md:order-none"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -36,7 +36,7 @@ const Home = () => {
           </motion.div>
 
           <motion.div
-            className="relative group md:w-[750px] w-full order-1 xl:order-none"
+            className="relative group md:w-[750px] w-full order-1 md:order-none"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
