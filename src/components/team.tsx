@@ -41,7 +41,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-20">
+    <section id="team" className="py-20 overflow-x-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Tim Kami</h2>
@@ -51,12 +51,12 @@ const Team = () => {
           </p>
         </div>
 
-        <Carousel className="w-full max-w-6xl mx-auto">
-          <CarouselContent className="-ml-4">
+        <Carousel className="w-full mx-auto">
+          <CarouselContent>
             {teamMembers.map((member, index) => (
               <CarouselItem
                 key={index}
-                className="pl-4 md:basis-1/2 lg:basis-1/4 mb-5"
+                className="basis-1/2 lg:basis-1/4 mb-5"
               >
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
@@ -81,7 +81,7 @@ const Team = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="flex justify-center mt-6 space-x-4">
+          <div className="flex justify-center mt-6 ">
             <CarouselPrevious />
             <CarouselNext />
           </div>
